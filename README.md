@@ -51,29 +51,29 @@ example2.zip
 api.json
 ```
 {
-    query: "Only include restaurants with 1 stars"
-    output: {
-                restaurants: [ 
-                    {
-                        name: "",
-                        location: ""
-                    }
-               ]
-   }
+    "query": "Only include restaurants with 1 stars",
+    "output": {
+        "restaurants": [
+            {
+                "name": "",
+                "location": ""
+            }
+        ]
+    }
 }
 ```
 
 And you can reply with the following:
 ```
 {
-    restaurants: [
+    "restaurants": [
         {
-            name: example_restaurant_1
-            location: example_location_1
+            "name": "example_restaurant_1",
+            "location": "example_location_1"
         },
         {
-            name: example_restaurant_2
-            location: example_location_2
+            "name": "example_restaurant_2",
+            "location": "example_location_2"
         }
     ]
 }
