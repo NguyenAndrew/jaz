@@ -30,7 +30,7 @@ example1.zip
 api.json
 ```
 {
-    inputs: [shop1.txt, shop2.txt, shop3.txt]
+    "inputs": ["shop1.txt", "shop2.txt", "shop3.txt"]
 }
 ```
 
@@ -85,7 +85,7 @@ No. Feel free to enforce a specific name or let your consumer choose any name th
 
 ## Does the api.json have to be in a certain format?
 
-No. api.json can be any valid json format.
+No. api.json can be any format. Doesn't even have to be json (could be a api.ts for example)! You will want to limit entrypoint types supported by your jaz, depending on your team's capacity and consumer wants.
 
 ## Can the api.json be renamed to something else?
 
