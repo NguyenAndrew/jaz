@@ -22,7 +22,7 @@ Your consumer can give you a request like the following:
 example1.zip
 ```
 .
-├── api.json                   # The entrypoint for a jaz file (api.json is the default entrypoint name)
+├── api.json                   # The entrypoint for a jaz file (api.json is the default entrypoint name/filetype)
 ├── shop1.txt
 ├── shop2.txt
 ├── shop3.txt
@@ -46,7 +46,7 @@ Your consumer can give you a request like the following:
 example2.zip
 ```
 .
-├── api.json                   # The entrypoint for a jaz file
+├── api.json
 ```
 api.json
 ```
@@ -85,7 +85,7 @@ No. Feel free to enforce a specific name or let your consumer choose any name th
 
 ## Does the api.json have to be in a certain format?
 
-No. api.json can be any format. Doesn't even have to be json (could be a api.ts for example)! You will want to limit entrypoint types supported by your jaz, depending on your team's capacity and consumer wants.
+No. api.json can be any format. Doesn't even have to be json (could be api.ts for example)! You will want to limit entrypoint types supported by your jaz, depending on your team's capacity and consumer wants.
 
 ## Can the api.json be renamed to something else?
 
