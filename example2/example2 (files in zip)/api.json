@@ -1,0 +1,11 @@
+{
+    "query": "Only include restaurants with 1 stars",
+    "output": {
+        "restaurants": [
+            {
+                "name": "",
+                "location": ""
+            }
+        ]
+    }
+}

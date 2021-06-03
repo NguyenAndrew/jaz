@@ -1,0 +1,12 @@
+{
+    "restaurants": [
+        {
+            "name": "example_restaurant_1",
+            "location": "example_location_1"
+        },
+        {
+            "name": "example_restaurant_2",
+            "location": "example_location_2"
+        }
+    ]
+}
