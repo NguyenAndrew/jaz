@@ -79,19 +79,19 @@ And you can reply with the following:
 }
 ```
 
-## Does the zip file have to be a certain name.
+## Does the zip file have to be a certain name?
 
 No. Feel free to enforce a specific name or let your consumer choose any name they want.
 
-## Does the api.json have to be in a certain format.
+## Does the api.json have to be in a certain format?
 
 No. api.json can be any valid json format.
 
-## Can the api.json be renamed to something else.
+## Can the api.json be renamed to something else?
 
 The default name is api.json. However, naming is flexible!
 
-## Does the jaz response have to be a zip
+## Does the jaz response have to be a zip?
 
 The response can be whatever you want to make for the consumer. It can be anything (including zips)!
 
@@ -99,7 +99,7 @@ The response can be whatever you want to make for the consumer. It can be anythi
 
 JAZ can use as many (or as little) http endpoints as you like. Choose what is best for your consumer!
 
-## Why jaz, when REST and GraphQL already exists
+## Why jaz, when REST and GraphQL already exists?
 
 jaz is compatible with both REST and GraphQL, but could out compete both of these paradigms in the future! 
 
