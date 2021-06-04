@@ -85,7 +85,7 @@ No. Feel free to enforce a specific name or let your consumer choose any name th
 
 ## Does the api.json have to be in a certain format?
 
-No. api.json can be any format. Doesn't even have to be json (could be api.ts for example)! You will want to limit entrypoint types supported by your jaz, depending on your team's capacity and consumer wants.
+No. api.json can be any schema or any format. Doesn't even have to be json (could be api.ts for example)! You will want to limit entrypoint types supported by your jaz, depending on your team's capacity and consumer wants.
 
 ## Can the api.json be renamed to something else?
 
@@ -94,10 +94,6 @@ The default name is api.json. However, naming is flexible!
 ## Does the jaz response have to be a zip?
 
 The response can be whatever you want to make for the consumer. It can be anything (including zips)!
-
-## Are you limited to a single http when using jaz?
-
-JAZ can use as many (or as little) http endpoints as you like. Choose what is best for your consumer!
 
 ## Why jaz, when REST and GraphQL already exists?
 
@@ -108,6 +104,10 @@ jaz provides both an extremely convenient way for people to create their own API
 ## Why doesn't jaz just use multi-part HTTP feature? Why would I use jaz when multi-part exists?
 
 jaz is transport layer agnostic, but there is another reason even when using HTTP. jaz's simplicity and flexibility (both the zip and api.json) provides a better creator and consumer experience then directly using multi-part.
+
+## Are you limited to a single http endpoint when using jaz?
+
+If using HTTP, JAZ can use as many (or as little) HTTP endpoints as you like. Choose what is best for your consumer!
 
 ## Wont my API's take a performance hit consuming zips? Won't my consumers take a performance hit creating zips?
 
@@ -124,3 +124,7 @@ You can do API discovery similar to REST and GraphQL. Either have it generated a
 ## My API requires the consumer to input a large zip file. However, my serverless backend has a file size limit! What can I do here?
 
 Have your consumer create a request that contains a presigned url to the jaz request, instead of sending in the zip file directly. In the backend of your API, you can use the presigned url to retrieve the actual jaz request.
+
+## What if I am using event driven architectures? How do I send the event along when the services I am using have a message size limit.
+
+Instead of passing along jaz zips directly through as event messages, you can store the jaz, pass a reference to that file along with your event, and have your event processing services retrieve the jaz zip using that reference.
