@@ -99,7 +99,7 @@ The response can be whatever you want to make for the consumer. It can be anythi
 
 jaz is compatible with both REST and GraphQL, but could out compete both of these paradigms in the future! 
 
-jaz provides both an extremely convenient way for people to create their own APIs, and allows for consumers to grab the information they want.
+jaz provides both an extremely convenient way for people to create their own APIs, **in the format that is best for your consumers**, and allows for consumers to grab the information they want.
 
 ## Why doesn't jaz just use multi-part HTTP feature? Why would I use jaz when multi-part exists?
 
