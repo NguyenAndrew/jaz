@@ -117,6 +117,10 @@ Start creating your API's with jaz first, and see if this concern actually appli
 
 Technically could have been another format. ZIP is a commonly used to group files together. Also makes "jaz" an easy acronym to remember.
 
+### Why use zip files over multipart/form-data?
+
+ZIP lets you use nested directories, this functionality makes it possible for consumers to provide metadata using folder structure for API calls. multipart/form-data makes it easy to provide a list of files, but consumers will encounter difficulties if they want to use any nesting.
+
 ## How can I do API discovery?
 
 You can do API discovery similar to REST and GraphQL. Either have it generated automatically, or write it out manually.
