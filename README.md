@@ -105,6 +105,10 @@ jaz provides both an extremely convenient way for people to create their own API
 
 jaz is transport layer agnostic, but there is another reason even when using HTTP. jaz's simplicity and flexibility (both the zip and api.json) provides a better creator and consumer experience then directly using multi-part.
 
+## In what scenario do zip files provide a better experience than multipart/form-data?
+
+ZIP lets you use nested directories, this functionality makes it possible for consumers to provide metadata using folder structure for API calls. multipart/form-data makes it easy to provide a list of files, but consumers will encounter difficulties if they want to use any nesting.
+
 ## Are you limited to a single http endpoint when using jaz?
 
 If using HTTP, JAZ can use as many (or as little) HTTP endpoints as you like. Choose what is best for your consumer!
@@ -116,10 +120,6 @@ Start creating your API's with jaz first, and see if this concern actually appli
 ## Why zip files? Why not INSERT OTHER file grouping format here?
 
 Technically could have been another format. ZIP is a commonly used to group files together. Also makes "jaz" an easy acronym to remember.
-
-## Why use zip files over multipart/form-data?
-
-ZIP lets you use nested directories, this functionality makes it possible for consumers to provide metadata using folder structure for API calls. multipart/form-data makes it easy to provide a list of files, but consumers will encounter difficulties if they want to use any nesting.
 
 ## How can I do API discovery?
 
